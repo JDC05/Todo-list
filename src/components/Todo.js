@@ -28,10 +28,8 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
         {todo.text}
       </div>
       <div className='icons'>
-        <h2 onClick={() => removeTodo(todo.id)}
-          className='delete-icon'>DELETE</h2>
-        <h2 onClick={() => setEdit({ id: todo.id, value: todo.text })}
-          className='edit-icon'>EDIT</h2>
+          <i onClick={() => removeTodo(todo.id)} class='bx bx-cut' ></i>
+          <i onClick={() => setEdit({ id: todo.id, value: todo.text })} class='bx bx-edit'></i>
       </div>
     </div>
   ))
