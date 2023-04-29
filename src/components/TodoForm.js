@@ -35,9 +35,7 @@ export default function TodoForm(props) {
             ref={inputRef}
             className='todo-input edit'
           />
-          <button onClick={handleSubmit} className='todo-button edit'>
-            CHANGE
-          </button>
+          <i onClick={handleSubmit} class='bx bxs-save' ></i>
         </>
       ) : (
         <>
@@ -49,9 +47,7 @@ export default function TodoForm(props) {
             className='todo-input'
             ref={inputRef}
           />
-          <button onClick={handleSubmit} className='todo-button'>
-            ADD
-          </button>
+          <i onClick={handleSubmit} class='bx bxs-add-to-queue' ></i>
         </>
       )}
     </form>
