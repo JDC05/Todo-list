@@ -40,13 +40,18 @@ h2 {
   width: 320px;
   background: teal;
   color: #fff;
+  border: none;
+}
+
+.todo-input:focus {
+  outline: none;
 }
 
 .todo-input::placeholder {
   color: #e2e2e2;
 }
 
-.todo-button {
+.todo-form i {
   padding: 16px;
   border: none;
   border-radius: 0 4px 4px 0;
@@ -87,7 +92,7 @@ h2 {
   cursor: pointer;
 }
 
-.delete-icon {
+.icons i {
   margin-right: 10px;
 }
 
